@@ -7,7 +7,7 @@
 	<h1>MySQL Table Viewer</h1>
 	<?php
 		// Define database connection variables
-		$servername = "myglsqlsvr";
+		$servername = "myglsqlsvr.mysql.database.azure.com";
 		$username = "mysqluser";
 		$password = "Supersecret!";
 		$dbname = "mysqldb";

@@ -24,7 +24,7 @@
 		$sql = "SELECT * FROM employees";
 		$result = $conn->query($sql);
 
-		if ($result->num_rows > 0) {
+		//if ($result->num_rows > 0) {
 			// Display table headers
 			echo "<table><tr><th>Employee Number</th><th>First Name</th><th>Email</th></tr>";
 			// Loop through results and display each row in the table
@@ -32,9 +32,9 @@
 				echo "<tr><td>" . $row["emp_no"] . "</td><td>" . $row["first_name"] . "</td><td>" . $row["email_id"] . "</td></tr>";
 			}
 			echo "</table>";
-		} else {
-			echo "0 results";
-		}
+		//} else {
+			//echo "0 results";
+		//}
 
 		// Close database connection
 		$conn->close();

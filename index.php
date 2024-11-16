@@ -19,9 +19,12 @@
 		if ($conn->connect_error) {
 			die("Connection failed: " . $conn->connect_error);
 		}
+		else {
+			echo "connected"
+		}
 
 		// Query database for all rows in the table
-		$sql = "SELECT * FROM employees limit 10 ;";
+		$sql = "SELECT * FROM employees limit 10";
 		$result = $conn->query($sql);
 
 		if ($result->num_rows > 0) {
